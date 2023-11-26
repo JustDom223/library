@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <dialog id="bookForm">
+        <form action="./books.js" method="get" id="book" >
+            <h1>What is the book you would like to add?</h1>
+            <div class="inputContainer">
+                <label for="bookTitleInput">Book Title:</label>
+                <input type="text" name="bookTitle" id="bookTitleInput" placeholder="Lord of the Rings" required>
+            </div>
+            <div class="inputContainer">
+                <label for="authorInput">Author:</label>
+                <input type="text" name="author" id="authorInput" placeholder="John Ronald Reuel Tolkien">
+            </div>
+            <div class="inputContainer">
+                <label for="pageCountInput">Page count:</label>
+                <input type="text" name="pageCount" id="pageCountInput" placeholder="1216">
+            </div>
+            <div class="inputContainer">
+                <p>Have you finished this book?</p>
+                <input type="radio" name="hasRead" id="hasReadInput" value="Read" required>
+                <label for="hasReadInput">Yes?</label>
+                <input type="radio" name="hasRead" id="hasNotReadInput" value="Not read" required>
+                <label for="hasNotReadInput">No?</label>
+            </div>
+            <input type="submit" id="submitFormButton"></button>
+      
+            <input type="reset">
+        </form>
+    </dialog>
+    <header><h1>Library</h1>
+    </header>
+    <div id="library">
+        <button id="addBook">+</button>
+    </div>
+
+    <script src="books.js"></script>
+</body>
+</html>
